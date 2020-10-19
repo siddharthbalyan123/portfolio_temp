@@ -1,0 +1,148 @@
+body{
+	margin-left:100;
+	margin-right:100;
+	margin-top:0;
+	margin-bottom:50;
+	background-color:#151515;
+	font-family:"Avenir Next";
+}
+header{
+	position:fixed;
+	left:0px;
+	right:0px;
+	width:85%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	transition:0.6s;
+	padding:40px 100px;
+}
+header .logo{
+	position:relative;
+	transition:0.6s;
+}
+header.sticky{
+	padding:5px 100px;
+	background:#151515;
+}
+header ul{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+header ul li{
+	position:relative;
+	list-style:none;
+}
+header ul li a{
+	position:relative;
+	text-decoration:none;
+	margin: 0 15px;
+	padding:20;
+	color:#fff;
+	transition:0.3s;
+}
+header ul li a:hover{
+	color:#F26C4F;
+}
+header ul li a:active{
+	color:#F26C4F;
+}
+header ul li.active a{
+	color:#F26C4F;
+}
+.app{
+	padding:30;
+}
+.main{
+	padding-left:50px;
+}
+.aboutme{
+	text-align:center;
+	color:white;
+}
+.left {
+	float:left;
+	width: 35%;
+	margin-left:70;
+}
+.left2 {
+	float:left;
+	width: 35%;
+	margin-left:70;
+	background:#222222;
+}
+.right {
+	width: 50%;
+	float:right;
+	margin-right:115;
+	background:#222222;
+}
+.right2 {
+	width: 50%;
+	float:right;
+	margin-right:115;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.aboutme ul{
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.aboutme ul li{
+	list-style:none;
+	padding:5%;
+}
+.aboutme ul li img{
+	width:100px;
+	height:100px;
+	padding-bottom:15;
+	transition: transform .6s; 
+}
+.aboutme ul li img:hover{
+	transform: scale(1.4); 
+}
+.social{
+	color:white;
+	margin-left:30;
+}
+.social a{
+	text-decoration:none;
+	padding:3;
+	color:white;
+}
+.social a:hover{
+	color:black;
+}
+.shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+footer{
+	margin-left:50px;
+	margin-right:50px;
+	 background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,
+	 url('bg-header.jpg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
