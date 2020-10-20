@@ -5,17 +5,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	</head>
 	<body>
-		<header>
+		<header class="topnav">
 			<a href="#" class="logo"><img src="logo.png" height=55 width=60></a>
+			<p class="toggle-button"><font size=5 color=white>Portfolio</font></p>
 			<ul>
 				<li id="home" class="active"><a href="#">Home</a></li>
 				<li id="about"><a href="#" data-page="aboutme">About</a></li>
 				<li id="skill"><a href="#" data-page="skills">Skills</a></li>
 				<li id="projects"><a href="#" data-page="project">Projects</a></li>
 				<li id="interests"><a href="#" data-page="interest">Interests</a></li>
-				<li id="contact"><a href="#" data-page="con">Contact</a></li>	
+				<li id="contact"><a href="#" data-page="con">Contact</a></li>
 			</ul>
 		</header>
 		<br><br><br><br>
@@ -58,12 +60,12 @@
 			<h1><font face="copperplate">"Skills"</font></h1>
 			<hr width=40%><br><br>
 			<ul>
-				<li><img src="c++.png">C++</li>
-				<li><img src="java.png">Java</li>
-				<li><img src="html.png">HTML</li>
-				<li><img src="css.png">CSS</li>
-				<li><img src="javascript.png">JavaScript</li>
-				<li><img src="ps.png">Photoshop</li>
+				<li><img src="c++.png"><br>C++</li>
+				<li><img src="java.png"><br>Java</li>
+				<li><img src="html.png"><br>HTML</li>
+				<li><img src="css.png"><br>CSS</li>
+				<li><img src="javascript.png"><br>JavaScript</li>
+				<li><img src="ps.png"><br>Photoshop</li>
 			</ul><br>
 		</div>
 		<div id="project" class="aboutme">
@@ -123,8 +125,9 @@
 				nav5.classList.toggle("active",window.scrollY>2400 & window.scrollY<2700);
 				nav6.classList.toggle("active",window.scrollY>2700 & window.scrollY<3300);
 			})
+			
 		$("a").click(function(){
 		var pageId = $(this).attr("data-page");
 		$("html, body").animate({ scrollTop: $("#"+pageId).offset().top }, 1000);
-});
+		});	
 </script>
