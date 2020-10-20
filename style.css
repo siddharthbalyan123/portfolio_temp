@@ -4,7 +4,7 @@ body{
 	margin-top:0;
 	margin-bottom:50;
 	background-color:#151515;
-	font-family:"Avenir Next";
+	font-family:"Lato";
 }
 header{
 	position:fixed;
@@ -236,5 +236,7 @@ footer{
 	position:relative;
 	transition:0.6s;
 	}
+	
+
 }
 
